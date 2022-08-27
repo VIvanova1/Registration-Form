@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script src="app.js"></script>
     <title>Sign up</title>
 </head>
 
@@ -18,15 +19,15 @@
             <h1>SIGN UP</h1>
             <input type="text" placeholder="Full Name" required>
             <input type="text" placeholder="Username" required>
-            <input type="number" min="0" max="12" placeholder='Phone Number'>
+            <input type="number" maxlength="15" placeholder='Phone Number' required>
             <input type="email" placeholder="Email" required>
-            <input type="password" placeholder="Password" required>
-            <input type="password" placeholder="Confirm your password" required>
-            <input type="date" max="2004-01-01">
-            <input type="text" placeholder="Country">
-            <br>
-            <input type="checkbox" class="checkbox" name="agreement"> I agree with <a href='#'>Terms</a> & <a href='#'>Conditions agreement</a>.
-            <button type="submit">Register me</button>
+
+            <input type="password" id="pass" minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" placeholder="Password" required>
+            <input type="password" id="confirmPass" placeholder="Confirm your password" required>
+
+
+            <input type="checkbox" class="checkbox" name="agreement" required> I agree with <a href='#'>Terms</a> & <a href='#'>Conditions agreement</a>.
+            <button type="submit" onclick="matchPassword()">Register me</button>
         </form>
     </section>
 </body>
