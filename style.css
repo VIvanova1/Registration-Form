@@ -2,24 +2,45 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Aboreto', cursive;
+    font-size: 18px;
     background-color: #D9D2B0;
     /* outline: 1px solid blue; */
 }
 
-body {
-    width: 80%;
+section {
+    width: 60%;
     margin: auto;
     padding: 100px 0;
 }
 
+form {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 42px;
+}
+
 input {
-    display: block;
-    padding: 10px;
-    min-width: 400px;
+    display: inline-block;
+    padding: 10px 15px;
+    width: 300px;
     margin: 10px auto;
     font-size: large;
     border: none;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
-    transition: .3s box-shadow;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.3);
     border-radius: 50px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input.checkbox {
+    width: 30px;
+    height: 20px;
+    box-shadow: none;
+    margin-top: 20px;
 }
