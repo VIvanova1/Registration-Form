@@ -14,8 +14,8 @@
         <h1>SIGN UP</h1>
     </section>
     <section>
-        <input type="text" placeholder="Name" required>
-        <input type="text" placeholder="Last Name" required>
+        <input type="text" placeholder="Name" class="smallInput" required>
+        <input type="text" placeholder="Last Name" class="smallInput" required>
         <input type="text" placeholder="Username" required>
         <input type="email" placeholder="Email" required>
         <input type="password" placeholder="Password" required>
@@ -23,13 +23,13 @@
     </section>
     <br>
     <section>
-        <input type="number" placeholder='Phone Number'>
+        <input type="number" min="0" max="12" placeholder='Phone Number'>
         <!-- <label for="birthday">Date of birth</label> -->
-        <input type="date" name="Date of birth">
+        <input type="date" value="Date of birth" max="2004-01-01">
         <input type="text" placeholder="Country">
     </section>
     <section>
-        <input type="checkbox" name="agreement"> I agree with <a href='#'>Terms & Conditions agreement</a>.
+        <input type="checkbox" name="agreement" class="smallInput"> I agree with <a href='#'>Terms & Conditions agreement</a>.
         <button type="submit">Register me</button>
     </section>
 </body>
