@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Aboreto', cursive;
+    font-family: 'Roboto Mono', monospace;
     font-size: 18px;
     background-color: #D9D2B0;
     /* outline: 1px solid blue; */
@@ -16,6 +16,8 @@ section {
 
 form {
     text-align: center;
+    padding: 90px;
+    border-radius: 15%;
 }
 
 h1 {
@@ -38,9 +40,28 @@ input:focus {
     outline: none;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 input.checkbox {
     width: 30px;
     height: 20px;
     box-shadow: none;
     margin-top: 20px;
+}
+
+a {
+    color: black;
+}
+
+button {
+    display: block;
+    min-width: 200px;
+    margin: auto;
+    padding: 20px;
+    font-weight: 900;
+    border-radius: 50px;
 }
