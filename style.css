@@ -4,19 +4,18 @@
     box-sizing: border-box;
     font-family: 'Roboto Mono', monospace;
     font-size: 18px;
-    background-color: #D9D2B0;
+    background-color: #dedcd1;
     /* outline: 1px solid blue; */
 }
 
-section {
-    width: 60%;
+section#main {
+    width: 40%;
     margin: auto;
-    padding: 100px 0;
 }
 
 form {
     text-align: center;
-    padding: 90px;
+    padding: 60px;
     border-radius: 15%;
 }
 
@@ -64,4 +63,10 @@ button {
     padding: 20px;
     font-weight: 900;
     border-radius: 50px;
+}
+
+.title {
+    margin: auto auto;
+    font-size: larger;
+    color: black;
 }
