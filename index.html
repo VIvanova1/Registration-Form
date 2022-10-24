@@ -14,22 +14,24 @@
 </head>
 
 <body>
-    <section>
+    <section id="main">
         <form action="">
             <h1>SIGN UP</h1>
-            <input type="text" placeholder="Full Name" required>
-            <input type="text" placeholder="Username" required>
-            <input type="number" maxlength="15" placeholder='Phone Number' required>
-            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Full Name" value="Veneta" required>
+            <input type="text" placeholder="Username" id="user-name" value="venitY" required>
+            <input type="number" maxlength="15" placeholder='Phone Number' value="0988888" required>
+            <input type="email" placeholder="Email" value="v@abv.bg" required>
 
-            <input type="password" id="pass" minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" placeholder="Password" required>
+            <input type="password" id="pass" minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,12}$" placeholder="Password" required>
             <input type="password" id="confirmPass" placeholder="Confirm your password" required>
 
             <br/>
             <input type="checkbox" class="checkbox" name="agreement" required> I agree with <a href='#'>Terms</a> & <a href='#'>Conditions agreement</a>.
-            <button type="submit" onclick="matchPassword()">Register me</button>
+            <button type="submit" id="register-btn">Register me</button>
         </form>
     </section>
+    <script src="/app.js"></script>
+
 </body>
 
 </html>
