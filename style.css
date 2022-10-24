@@ -66,7 +66,7 @@ button {
 }
 
 .title {
-    margin: auto auto;
+    margin: 0 auto;
     font-size: larger;
     color: black;
 }
