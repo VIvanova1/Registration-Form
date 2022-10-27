@@ -16,7 +16,7 @@ function solve() {
         const mainSection = document.getElementById('main');
         const h1Element = document.createElement('h1');
         h1Element.classList.add('title');
-        h1Element.textContent = `Wellcome, ${username.value}!`;
+        h1Element.textContent = `Hi, ${username.value}!`;
         mainSection.appendChild(h1Element);
     });
 }
