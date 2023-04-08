@@ -8,7 +8,7 @@ function solve() {
     const registerBtnElement = document.getElementById('register-btn');
     registerBtnElement.addEventListener('click', (e) => {
         e.preventDefault();
-        if (password.value !== passwordChek.value) {
+        if (password.value && password.value !== passwordChek.value) {
             alert('Passwords did not match')
         }
         e.currentTarget.parentElement.remove();
